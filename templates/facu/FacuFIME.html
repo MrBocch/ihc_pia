@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FIME</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/MenuBase.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-header">
+                    <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+                </div>
+                <h1>Menu<b>Verse</b>U</h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="{{url_for('index')}}"> <i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected">
+                            <a href="{{url_for('Facultades')}}" class="text-menu-selected">
+                                <i class="fa-solid fa-school"></i>Facultades</a>
+                        </li>
+                        <li><a href="{{url_for('QuienSomos')}}"><i class="fa-solid fa-address-card"></i></i></i>Quienes somos</a>
+                        </li>
+                        <li><a href="{{url_for('Sugerencias')}}"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+        <h1 class="tema">Facultad de ingeniería mecánica y eléctrica</h1>
+        <div class="row">
+            <div class="tarjeta">
+                <h2>Lista de Comidas</h2>
+                <div class="productos">
+                    <p class="producto"> Hamburguesa</p>
+                    <p class="precio">$90</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Burrito</p>
+                    <p class="precio">$65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Tacos de guisos</p>
+                    <p class="precio"> $22 c/u</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Platillo del día</p>
+                    <p class="precio">$150</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Caldo</p>
+                    <p class="precio">$132</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Ensalada</p>
+                    <p class="precio">$65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hotdogs</p>
+                    <p class="precio">$72</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <h2>Lista de Bebidas</h2>
+                <div class="productos">
+                    <p class="producto"> Cola-cola</p>
+                    <p class="precio">$20</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Agua de Limonada</p>
+                    <p class="precio">$27</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Agua</p>
+                    <p class="precio">$22</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Powerade</p>
+                    <p class="precio">$23</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+            </div>
+
+            <div class="redes-footer">
+                <a id="enlace-facebook" title="Enlace a Facebook"><i
+                        class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a id="enlace-whatsapp" title="Enlace a Whatsapp"><i class="fab fa-whatsapp icon-redes-footer"></i></a>
+                <a id="enlace-instagram" title="Enlace a Instagram"><i
+                        class="fab fa-instagram icon-redes-footer"></i></a>
+                <a id="enlace-twitter" title="Enlace a Twitter"><i class="fab fa-twitter icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2023 MenuVereseU - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+</html>

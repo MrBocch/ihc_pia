@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Quienes Somos
+    </title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Base.css') }}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/QuienesSom.css') }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-header">
+                    <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg') }}" alt="Logo MenuVerseU">
+                </div>
+                <h1>Menu<b>Verse</b>U</h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for('index') }}"> <i class="fas fa-home"></i>Inicio</a></li>
+                        <li><a href="{{ url_for('Facultades')}}"><i class="fa-solid fa-school"></i></i>Facultades</a></li>
+                        <li class="menu-selected">
+                            <a href="{{ url_for('QuienSomos')}}" class="text-menu-selected">
+                                <i class="fa-solid fa-address-card"></i>Quienes somos</a>
+                        </li>
+                        <li><a href="{{url_for('Sugerencias')}}"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+
+
+        <div class="article-container-cover">
+            <div class="container-info-cover">
+                <h1>¡MenuVerseU!</h1>
+                <p>MenuVerseU busca que puedas encontrar todos los menus de las cafeterias de ciudad universitaria</p>
+            </div>
+        </div>
+
+        <div class="container-content">
+            <article>
+                <h1>¿Quienes somos?</h1>
+                <p>MenuVerseU es una pagina que quiere facilitar la vida de los estudiantes universitarios al
+                    proporcionar informacion actualizada y accesible sobre los menus contando con comidas, bebidas,
+                    combos, entre otras cosas que las cafeterias preparan, las cafeterias que se encontraran en esta
+                    pagina seran las que se encuentran dentro de ciudad universitaria.
+                </p>
+
+                <h1>Historia</h1>
+                <p>MenuVerseU nació como parte de un proyecto académico, donde un grupo apasionado de estudiantes de la
+                    Facultad de Ingeniería Mecánica y Eléctrica se unió para abordar la necesidad de acceder fácilmente
+                    a los menús de las cafeterías universitarias.
+                </p>
+
+                <h1>¡Misión y propósito!</h1>
+                <p>
+                    Nuestra misión en MenuVerseU es facilitar a los estudiantes el acceso a la información sobre los
+                    menús de las cafeterías de la universidad. Queremos proporcionar una experiencia fácil y práctica
+                    para que puedan planificar sus comidas de manera conveniente.
+                </p>
+
+                <h1>¡Visión!</h1>
+                <p>
+                    En MenuVerseU, aspiramos a convertirnos en la principal plataforma para que los estudiantes de la
+                    universidad accedan fácilmente a la información sobre los menús de las cafeterías. Nuestra visión va
+                    más allá de ser simplemente un directorio; buscamos ser el compañero confiable de cada estudiante,
+                    facilitando sus elecciones alimenticias diarias y mejorando su experiencia universitaria.
+                </p>
+
+                <h1>¡Valores!</h1>
+                <p>En MenuVerseU, nuestros valores fundamentales guían cada aspecto de nuestro trabajo y reflejan la
+                    esencia de quiénes somos como equipo y como plataforma. Estos valores sirven como cimientos sólidos
+                    que
+                    sustentan nuestra misión y visió</p>
+                <p>
+                    Transparencia:
+                    Creemos en la transparencia total en la presentación de la información. Nos esforzamos por
+                    proporcionar datos precisos y actualizados sobre los menús de las cafeterías, permitiendo a los
+                    usuarios tomar decisiones informadas.
+                </p>
+                <p>
+                    Facilitadores de la Comunidad:
+                    Nos consideramos facilitadores de la comunidad universitaria. Buscamos crear un ambiente
+                    colaborativo entre estudiantes, cafeterías y MenuVerseU para mejorar la experiencia gastronómica en
+                    el campus.
+                </p>
+                <p>
+                    Enfoque en la Usabilidad:
+                    Priorizamos la usabilidad en todas nuestras interacciones. Queremos que la experiencia de los
+                    usuarios sea intuitiva, eficiente y agradable, haciendo que MenuVerseU sea accesible para todos.
+                </p>
+                <p>
+                    Pasión por la Innovación:
+                    Abrazamos la innovación continua. Estamos constantemente explorando nuevas tecnologías y enfoques
+                    para mejorar MenuVerseU y asegurarnos de que esté a la vanguardia de las necesidades cambiantes de
+                    los estudiantes.
+                </p>
+                <p>
+                    Responsabilidad y Ética:
+                    Operamos con responsabilidad y ética en todas nuestras acciones. Valoramos la integridad y la
+                    confianza, asegurándonos de que nuestras prácticas y relaciones con las cafeterías y usuarios estén
+                    fundamentadas en principios sólidos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-footer">
+
+        <footer>
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+            </div>
+
+            <div class="redes-footer">
+                <a id="enlace-facebook" title="Enlace a Facebook"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a id="enlace-whatsapp" title="Enlace a Whatsapp"><i class="fab fa-whatsapp icon-redes-footer"></i></a>
+                <a id="enlace-instagram" title="Enlace a Instagram"><i class="fab fa-instagram icon-redes-footer"></i></a>
+                <a id="enlace-twitter" title="Enlace a Twitter"><i class="fab fa-twitter icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2023 MenuVereseU - Todos los Derechos Reservados</h4>
+
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

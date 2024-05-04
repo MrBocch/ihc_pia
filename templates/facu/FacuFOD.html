@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FOD</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/MenuBase.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-header">
+                    <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+                </div>
+                <h1>Menu<b>Verse</b>U</h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="{{url_for('index')}}"> <i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected">
+                            <a href="{{url_for('Facultades')}}" class="text-menu-selected">
+                                <i class="fa-solid fa-school"></i>Facultades</a>
+                        </li>
+                        <li><a href="{{url_for('QuienSomos')}}"><i class="fa-solid fa-address-card"></i></i></i>Quienes somos</a>
+                        </li>
+                        <li><a href="{{url_for('Sugerencias')}}"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+        <h1 class="tema">Facultad de Odontología</h1>
+        <div class="row">
+            <div class="tarjeta">
+                <h2>Desayunos</h2>
+                <div class="productos">
+                    <p class="producto">Desayuno del dia </p>
+                    <p class="precio"> $80</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Huevos al gusto </p>
+                    <p class="precio"> $58</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Huevos groceros </p>
+                    <p class="precio"> $65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Machacado con huevo </p>
+                    <p class="precio"> $65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chilaquiles </p>
+                    <p class="precio"> $65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Molletes </p>
+                    <p class="precio"> $28</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Molletes con guiso </p>
+                    <p class="precio"> $49</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sincronizadas con guiso </p>
+                    <p class="precio"> $49</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sincronizadas sencillas </p>
+                    <p class="precio"> $42</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Tacos de guiso </p>
+                    <p class="precio"> $14</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hot cakes </p>
+                    <p class="precio"> $45</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Comidas</h2>
+                <div class="productos">
+                    <p class="producto">Comida del dia </p>
+                    <p class="precio"> $80</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Tacos de arrachera </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Milanesa encebollada </p>
+                    <p class="precio"> $79</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Milanesa de res empanizada </p>
+                    <p class="precio"> $79</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Milanesa de pollo empanizada </p>
+                    <p class="precio"> $79</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Milanesa de pollo a la plancha </p>
+                    <p class="precio"> $79</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Milanesa en fajitas </p>
+                    <p class="precio"> $79</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Enchiladas suizas </p>
+                    <p class="precio"> $75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Entomatadas </p>
+                    <p class="precio"> $75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Torta de carnes frias </p>
+                    <p class="precio"> $65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Torta de milanesa </p>
+                    <p class="precio"> $79</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hamburguesa con papas(de res y de pollo) </p>
+                    <p class="precio"> $69</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Tenders con papas </p>
+                    <p class="precio"> $69</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Burrito de arrachera </p>
+                    <p class="precio"> $75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Burrito de guiso </p>
+                    <p class="precio"> $59</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Filete de pescado a la plancha </p>
+                    <p class="precio"> $82</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Filete de pescado empanizado </p>
+                    <p class="precio"> $82</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hot dog jumbo </p>
+                    <p class="precio"> $39</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Pizza individual </p>
+                    <p class="precio"> $35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Boneless de pollo </p>
+                    <p class="precio"> $69</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Healthy food</h2>
+                <div class="productos">
+                    <p class="producto">Sandwich de jamon (con queso amarillo) </p>
+                    <p class="precio"> $25</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sandwich de jamon (con aguacate, tomate y lechuga) </p>
+                    <p class="precio"> $29</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sandwich de jamon (con aguacate, tomate, lechuga y pechuga de pollo) </p>
+                    <p class="precio"> $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sandwich de jamon (con queso panela, aguacate) </p>
+                    <p class="precio"> $35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Panini de arrache </p>
+                    <p class="precio"> $80</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Panini de
+                </div>
+                <div class="productos">
+                    <p class="producto">Panini de pollo </p>
+                    <p class="precio"> $80</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Snacks y más</h2>
+                <div class="productos">
+                    <p class="producto">Crudités </p>
+                    <p class="precio"> $80</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Cóctel de frutas </p>
+                    <p class="precio"> $58</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Jugos</h2>
+                <div class="productos">
+                    <p class="producto">Medio litro </p>
+                    <p class="precio"> $25</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Litro </p>
+                    <p class="precio"> $37</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Jugos combinados</h2>
+                <div class="productos">
+                    <p class="producto">Jugo verde </p>
+                    <p class="precio"> $40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jugo de fresa </p>
+                    <p class="precio"> $40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jugo de betabel </p>
+                    <p class="precio"> $40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jugo Energetico </p>
+                    <p class="precio"> $40 y $55</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Licuados</h2>
+                <div class="productos">
+                    <p class="producto">Fresa </p>
+                    <p class="precio"> $40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Mango </p>
+                    <p class="precio"> $40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Platano </p>
+                    <p class="precio"> $40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chocolate </p>
+                    <p class="precio"> $40 y $55</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Combos</h2>
+                <div class="productos">
+                    <p class="producto">Ensalada chica, Sandwich a su elección y Agua de sabor </p>
+                    <p class="precio"> $105</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sandwich a su elección y Jugo o licuado de 1/2L </p>
+                    <p class="precio"> $70</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Crudite o cóctel de frutas, Un panini a su elección y Jugo o licuado de 1/2L </p>
+                    <p class="precio"> $127</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+            </div>
+
+            <div class="redes-footer">
+                <a id="enlace-facebook" title="Enlace a Facebook"><i
+                        class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a id="enlace-whatsapp" title="Enlace a Whatsapp"><i class="fab fa-whatsapp icon-redes-footer"></i></a>
+                <a id="enlace-instagram" title="Enlace a Instagram"><i
+                        class="fab fa-instagram icon-redes-footer"></i></a>
+                <a id="enlace-twitter" title="Enlace a Twitter"><i class="fab fa-twitter icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2023 MenuVereseU - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sugerencias</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Sugerencias.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-header">
+                    <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+                </div>
+                <h1>Menu<b>Verse</b>U</h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="{{url_for('index')}}"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li><a href="{{url_for('Facultades')}}"><i class="fa-solid fa-school"></i></i>Facultades</a></li>
+                        <li><a href="{{url_for('QuienSomos')}}"><i class="fa-solid fa-address-card"></i></i></i>Quienes somos</a></li>
+                        <li class="menu-selected">
+                            <a href="{{url_for('Sugerencias')}}" class="text-menu-selected">
+                                <i class="fa-solid fa-envelope"></i>Sugerencias</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+        <div class="Sugerencia-container">
+            <div class="Sugerencia-info-container">
+
+              <h1 class="title">Sugerencia</h1>
+
+                <!-- <form class="inputs-container" action="https://formsubmit.co/cyairh24@gmail.com" method="POST"> -->
+                <form class="inputs-container" action="/Sugerencias" methods="POST">
+                    <input id="name" class="input" type="text" name="Nombre" placeholder="Nombre" required>
+                    <input id="email" class="input" type="email" name="Correo" placeholder="Correo" required>
+                    <input id="subject" class="input" type="text" name="Asunto" placeholder="Asunto" required>
+                    <textarea id="mensaje" class="textarea" name="Mensaje" placeholder="Mensaje" cols="30" rows="5"
+                        required></textarea>
+                    <input id="btn" class="btn" type="submit" value="Enviar">
+                </form>
+
+            </div>
+            <img class="image-container" src="{{url_for('static', filename='images/formularoSugerencias.png')}}" alt="Imagen de formulario">
+
+        </div>
+    </div>
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+            </div>
+            <div class="redes-footer">
+                <a id="enlace-facebook" title="Enlace a Facebook"><i
+                        class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a id="enlace-whatsapp" title="Enlace a Whatsapp"><i class="fab fa-whatsapp icon-redes-footer"></i></a>
+                <a id="enlace-instagram" title="Enlace a Instagram"><i
+                        class="fab fa-instagram icon-redes-footer"></i></a>
+                <a id="enlace-twitter" title="Enlace a Twitter"><i class="fab fa-twitter icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2023 MenuVereseU - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+</html>

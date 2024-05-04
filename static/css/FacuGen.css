@@ -1,0 +1,48 @@
+/* Agrega este contenido al nuevo archivo style.css */
+
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.logo-img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    color: #46a2fd;
+    margin-left: 10px;
+}
+
+/* Estilo para las listas de comidas y bebidas */
+h2 {
+    color: #007bff; /* Azul Bootstrap */
+}
+
+.list-group-item {
+    justify-content: space-between;
+}
+
+/* Estilo para el footer */
+.footer {
+    margin-top: 40px;
+    background-color: #282828;
+    padding: 40px 0;
+    color: #8e8e8e;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.social-icons a {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+/* Resto de tus estilos pueden seguir en este archivo */

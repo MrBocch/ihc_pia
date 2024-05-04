@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FIC</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/MenuBase.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-header">
+                    <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+                </div>
+                <h1>Menu<b>Verse</b>U</h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="{{url_for('index')}}"> <i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected">
+                            <a href="{{url_for('Facultades')}}" class="text-menu-selected">
+                                <i class="fa-solid fa-school"></i>Facultades</a>
+                        </li>
+                        <li><a href="{{url_for('QuienSomos')}}"><i class="fa-solid fa-address-card"></i></i></i>Quienes somos</a>
+                        </li>
+                        <li><a href="{{url_for('Sugerencias')}}"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+        <h1 class="tema">Facultad de Ingeniería Civil</h1>
+        <div class="row">
+            <div class="tarjeta">
+                <h2>Lista de Comidas</h2>
+                <div class="productos">
+                    <p class="producto">Sándwhich Sencillo</p>
+                    <p class="precio">$22</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Cuernito</p>
+                    <p class="precio">$40</p>
+                </div>
+                <div class="productos">
+                    <p class="producto"> Sándwhich Especial en Domo</p>
+                    <p class="precio">$45</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Variedad de Baguettes</p>
+                    <p class="precio">$50</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Variedad de ensaladas verdes</p>
+                    <p class="precio">$80</p>
+                </div>
+                <div class="productos">
+                    <p class="producto"> Ensalada de pollo</p>
+                    <p class="precio">$40</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Coctel de Frutas</p>
+                    <p class="precio">$50</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hamburguesa </p>
+                    <p class="precio">$75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Torta</p>
+                    <p class="precio">$75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sincronizadas</p>
+                    <p class="precio">$75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Croissant de pollo</p>
+                    <p class="precio">$75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Boneless</p>
+                    <p class="precio">$70</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hot Dog</p>
+                    <p class="precio">$35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chili Dog</p>
+                    <p class="precio">$30</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Torta de Huevo</p>
+                    <p class="precio">$30</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Burrito de Huevo</p>
+                    <p class="precio">$28</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Mollete</p>
+                    <p class="precio">$25</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Burripizza</p>
+                    <p class="precio">$17</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <h2>Lista de Bebidas</h2>
+                <div class="productos">
+                    <p class="producto"> Cola-cola</p>
+                    <p class="precio">$22</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Agua</p>
+                    <p class="precio">$10</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Limonada</p>
+                    <p class="precio">$17</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Powerade</p>
+                    <p class="precio">$23</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Te Verde Lipton</p>
+                    <p class="precio">$25</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Té negro Lipton</p>
+                    <p class="precio">$24</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+            </div>
+
+            <div class="redes-footer">
+                <a id="enlace-facebook" title="Enlace a Facebook"><i
+                        class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a id="enlace-whatsapp" title="Enlace a Whatsapp"><i class="fab fa-whatsapp icon-redes-footer"></i></a>
+                <a id="enlace-instagram" title="Enlace a Instagram"><i
+                        class="fab fa-instagram icon-redes-footer"></i></a>
+                <a id="enlace-twitter" title="Enlace a Twitter"><i class="fab fa-twitter icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2023 MenuVereseU - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+</html>

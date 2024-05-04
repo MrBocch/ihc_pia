@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FFYL</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/MenuBase.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-header">
+                    <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+                </div>
+                <h1>Menu<b>Verse</b>U</h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="{{url_for('index')}}"> <i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected">
+                            <a href="{{url_for('Facultades')}}" class="text-menu-selected">
+                                <i class="fa-solid fa-school"></i>Facultades</a>
+                        </li>
+                        <li><a href="{{url_for('QuienSomos')}}"><i class="fa-solid fa-address-card"></i></i></i>Quienes somos</a>
+                        </li>
+                        <li><a href="{{url_for('Sugerencias')}}"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+        <h1 class="tema">Facultad de Filosofía y Letras</h1>
+        <div class="row">
+            <div class="tarjeta">
+                <h2>Almuerzos</h2>
+                <div class="productos">
+                    <p class="producto">Huevos al gusto </p>
+                    <p class="precio"> $65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chilaquiles </p>
+                    <p class="precio"> $65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Changos </p>
+                    <p class="precio"> $70</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Coctel de frutas</h2>
+                <div class="productos">
+                    <p class="producto"> Sencillo</p>
+                    <p class="precio">$40</p>
+                </div>
+                <div class="productos">
+                    <p class="producto"> preparado</p>
+                    <p class="precio">$45</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>comidas</h2>
+                <div class="productos">
+                    <p class="producto">Huevos al gusto </p>
+                    <p class="precio"> $65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Molletes </p>
+                    <p class="precio"> $35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hot Cakes </p>
+                    <p class="precio"> $40</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sincronizada c/papas </p>
+                    <p class="precio"> $35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sandwich c/papas </p>
+                    <p class="precio"> $35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sandwich c/papas </p>
+                    <p class="precio"> $35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hot Dog c/papas </p>
+                    <p class="precio"> $35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Papas a la francesa </p>
+                    <p class="precio"> $50</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hamburguesa c/papas </p>
+                    <p class="precio"> $60</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Torta c/papas </p>
+                    <p class="precio"> $60</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Papas Crisscut </p>
+                    <p class="precio"> $60</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Comida del dia </p>
+                    <p class="precio"> $80</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Milanesa de Res </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Bistec a la parrilla </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Tacos a vapor c/u </p>
+                    <p class="precio"> $10</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Tacos preparados c/u </p>
+                    <p class="precio"> $15</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Gorditas </p>
+                    <p class="precio"> $20</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Bebidas</h2>
+                <div class="productos">
+                    <p class="producto">Aguas frescas</p>
+                    <p class="precio"> $20 y $30</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Licuados </p>
+                    <p class="precio"> $30 y $50</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Café </p>
+                    <p class="precio"> $15</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Coca en vaso </p>
+                    <p class="precio"> $15</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Combos</h2>
+                <div class="productos">
+                    <p class="producto">Torta de pierna con papas y agua fresca </p>
+                    <p class="precio"> $70</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hamburguesa con papas y agua fresca </p>
+                    <p class="precio"> $70</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Tacos a vapor y agua </p>
+                    <p class="precio"> $50</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Pirata con papas y agua fresca </p>
+                    <p class="precio"> $80</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sanwich con papas y agua fresca </p>
+                    <p class="precio"> $45</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hot Dog con papas y agua fresca </p>
+                    <p class="precio"> $45</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Postre</h2>
+                <div class="productos">
+                    <p class="producto"> Pay de limon</p>
+                    <p class="precio">$25</p>
+                </div>
+                <div class="productos">
+                    <p class="producto"> Avena en vaso</p>
+                    <p class="precio">$25</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+            </div>
+
+            <div class="redes-footer">
+                <a id="enlace-facebook" title="Enlace a Facebook"><i
+                        class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a id="enlace-whatsapp" title="Enlace a Whatsapp"><i class="fab fa-whatsapp icon-redes-footer"></i></a>
+                <a id="enlace-instagram" title="Enlace a Instagram"><i
+                        class="fab fa-instagram icon-redes-footer"></i></a>
+                <a id="enlace-twitter" title="Enlace a Twitter"><i class="fab fa-twitter icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2023 MenuVereseU - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+</html>

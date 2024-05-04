@@ -1,0 +1,26 @@
+/*Bienvenida */
+.container-all {
+  padding: 20px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.container-all div {
+  margin: 20px;
+}
+.container-all h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.container-all p {
+  font-size: 20px;
+  color: #e3e3e3;
+  text-align: justify;
+}
+
+.container-all img {
+  width: 30%;
+  border-radius: 10px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FCQ</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/MenuBase.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-header">
+                    <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+                </div>
+                <h1>Menu<b>Verse</b>U</h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="{{url_for('index')}}"> <i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected">
+                            <a href="{{url_for('Facultades')}}" class="text-menu-selected">
+                                <i class="fa-solid fa-school"></i>Facultades</a>
+                        </li>
+                        <li><a href="{{url_for('QuienSomos')}}"><i class="fa-solid fa-address-card"></i></i></i>Quienes somos</a>
+                        </li>
+                        <li><a href="{{url_for('Sugerencias')}}"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+        <h1 class="tema">Facultad de Ciencias Químicas</h1>
+        <div class="row">
+            <div class="tarjeta">
+                <h2>Desayunos</h2>
+                <div class="productos">
+                    <p class="producto">Huevos con chorizo </p>
+                    <p class="precio">$58</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Huevos con jamón </p>
+                    <p class="precio">$58</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Huevos con salchicha </p>
+                    <p class="precio">$58</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Huevos estrellados(3pz) </p>
+                    <p class="precio">$58</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Huevos a la mexicana </p>
+                    <p class="precio">$58</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Huevos groseros </p>
+                    <p class="precio">$65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chilaquiles en salsa roja </p>
+                    <p class="precio">$65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chilaquiles en salsa verde</p>
+                    <p class="precio">$65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Molletes con frijoles </p>
+                    <p class="precio">$28</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Molletes con guiso </p>
+                    <p class="precio">$49</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Tacos de guisos c/u </p>
+                    <p class="precio">$28</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hot Cakes (3pz) </p>
+                    <p class="precio">$28</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <h2>Lista de Bebidas</h2>
+                <h3>Jugos Combinados</h3>
+                <div class="productos">
+                    <p class="producto">Medio litro </p>
+                    <p class="precio">$40</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Litro grande </p>
+                    <p class="precio">$55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jugo verde </p>
+                    <p class="precio"></p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jugo de fresa </p>
+                    <p class="precio"></p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jugo con manzana </p>
+                    <p class="precio"></p>
+                </div>
+                <h3>Jugos</h3>
+                <div class="productos">
+                    <p class="producto">Jugo de naranja </p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jugo de toronja </p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <h3>Licuados</h3>
+                <div class="productos">
+                    <p class="producto">Fresa </p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Mango </p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Platano </p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Papaya </p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chocolate </p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <h3>Licuados Combinados</h3>
+                <div class="productos">
+                    <p class="producto">Licuado 1: mango, platano, granola y miel </p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Licuado 2: mango, fresa, platano, almendra y nuez</p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Licuado 1: mango, granola y miel </p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Licuado 2: platano, fresa, granola y miel</p>
+                    <p class="precio">$40 y $55</p>
+                </div>
+                <h3>Snacks y mas</h3>
+                <div class="productos">
+                    <p class="producto">Crudités </p>
+                    <p class="precio">$35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Coctel de frutas </p>
+                    <p class="precio">$39</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+            </div>
+
+            <div class="redes-footer">
+                <a id="enlace-facebook" title="Enlace a Facebook"><i
+                        class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a id="enlace-whatsapp" title="Enlace a Whatsapp"><i class="fab fa-whatsapp icon-redes-footer"></i></a>
+                <a id="enlace-instagram" title="Enlace a Instagram"><i
+                        class="fab fa-instagram icon-redes-footer"></i></a>
+                <a id="enlace-twitter" title="Enlace a Twitter"><i class="fab fa-twitter icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2023 MenuVereseU - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+</html>

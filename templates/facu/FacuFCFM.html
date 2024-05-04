@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FCFM</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/MenuBase.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Header - menu-->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-header">
+                    <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+                </div>
+                <h1>Menu<b>Verse</b>U</h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="{{url_for('index')}}"> <i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu-selected">
+                            <a href="{{url_for('Facultades')}}" class="text-menu-selected">
+                                <i class="fa-solid fa-school"></i>Facultades</a>
+                        </li>
+                        <li><a href="{{url_for('QuienSomos')}}"><i class="fa-solid fa-address-card"></i></i></i>Quienes somos</a>
+                        </li>
+                        <li><a href="{{url_for('Sugerencias')}}"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+        <h1 class="tema">Facultad de Ciencias Físico Matemático</h1>
+        <div class="row">
+            <div class="tarjeta">
+                <h2>Desayunos</h2>
+                <div class="productos">
+                    <p class="producto">Huevos al gusto </p>
+                    <p class="precio"> $65</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Machacado </p>
+                    <p class="precio"> $75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Machacado Mexicano </p>
+                    <p class="precio"> $75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Machacado Ranchero </p>
+                    <p class="precio"> $75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Machacado Natural </p>
+                    <p class="precio"> $75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chilaquiles con Huevo</p>
+                    <p class="precio"> $50</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chilaquiles con Carne</p>
+                    <p class="precio"> $60</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Chilaquiles con Mixtos</p>
+                    <p class="precio"> $70</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sandwich </p>
+                    <p class="precio"> $35</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hot cakes pieza </p>
+                    <p class="precio"> $20</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Especiales</h2>
+                <div class="productos">
+                    <p class="producto">Lunes: Pozole </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Martes: Menudo </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Miercoles: Birria </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jueves: Caldo de res </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jueves: Caldo de pollo </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Viernes: Torta ahogada </p>
+                    <p class="precio"> $75</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Platillos fuertes</h2>
+                <div class="productos">
+                    <p class="producto">Bistec a la mexicana </p>
+                    <p class="precio"> $90</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Bistec a la plancha </p>
+                    <p class="precio"> $90</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Pollo a la plancha </p>
+                    <p class="precio"> $90</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Enchiladas suizas </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Comida del dia </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Jericalla </p>
+                    <p class="precio"> $25</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Tacos, Tortas y Más</h2>
+                <div class="productos">
+                    <p class="producto">Tacos(Maíz o Harina) </p>
+                    <p class="precio"> $85</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Quesadillas </p>
+                    <p class="precio"> $20</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Sincronizadas </p>
+                    <p class="precio"> $25</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Pirata </p>
+                    <p class="precio"> $60</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Campechana </p>
+                    <p class="precio"> $60</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Hamburguesa con papas </p>
+                    <p class="precio"> $75</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Torta cubana </p>
+                    <p class="precio"> $90</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Torta del chavo </p>
+                    <p class="precio"> $45</p>
+                </div>
+                <div class="productos">
+                    <p class="producto">Torta regia </p>
+                    <p class="precio"> $35</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <h2>Bebidas</h2>
+            <div class="productos">
+                <p class="producto">Aguas Frescas 1lt. </p>
+                <p class="precio"> $30</p>
+            </div>
+            <div class="productos">
+                <p class="producto">Aguas Frescas Fruta doble 1lt. </p>
+                <p class="precio"> $40</p>
+            </div>
+            <div class="productos">
+                <p class="producto">Licuado chico </p>
+                <p class="precio"> $30</p>
+            </div>
+            <div class="productos">
+                <p class="producto">Licuado grande </p>
+                <p class="precio"> $60</p>
+            </div>
+            <div class="productos">
+                <p class="producto">Licuado fruta doble chico </p>
+                <p class="precio"> $40</p>
+            </div>
+            <div class="productos">
+                <p class="producto">Licuado fruta doble grande </p>
+                <p class="precio"> $60</p>
+            </div>
+            <div class="productos">
+                <p class="producto">Café </p>
+                <p class="precio"> $20</p>
+            </div>
+            <div class="productos">
+                <p class="producto">Café con leche </p>
+                <p class="precio"> $25</p>
+            </div>
+            <div class="productos">
+                <p class="producto">Vaso de leche</p>
+                <p class="precio"> $20</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="{{url_for('static', filename='images/MenuVerseU_Logo.jpeg')}}" alt="Logo MenuVerseU">
+            </div>
+
+            <div class="redes-footer">
+                <a id="enlace-facebook" title="Enlace a Facebook"><i
+                        class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a id="enlace-whatsapp" title="Enlace a Whatsapp"><i class="fab fa-whatsapp icon-redes-footer"></i></a>
+                <a id="enlace-instagram" title="Enlace a Instagram"><i
+                        class="fab fa-instagram icon-redes-footer"></i></a>
+                <a id="enlace-twitter" title="Enlace a Twitter"><i class="fab fa-twitter icon-redes-footer"></i></a>
+            </div>
+            <hr>
+            <h4>© 2023 MenuVereseU - Todos los Derechos Reservados</h4>
+        </footer>
+    </div>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+</html>
