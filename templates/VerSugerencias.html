@@ -30,12 +30,11 @@
                     <ul>
                         <li><a href="{{ url_for('index') }}"> <i class="fas fa-home"></i>Inicio</a></li>
                         <li><a href="{{ url_for('Facultades')}}"><i class="fa-solid fa-school"></i></i>Facultades</a></li>
-                        <li class="menu-selected">
-                            <a href="{{ url_for('QuienSomos')}}" class="text-menu-selected">
-                                <i class="fa-solid fa-address-card"></i>Quienes somos</a>
-                        </li>
+                        <li><a href="{{ url_for('QuienSomos')}}" class="text-menu-selected"><i class="fa-solid fa-address-card"></i>Quienes somos</a></li>
                         <li><a href="{{url_for('Sugerencias')}}"><i class="fa-solid fa-envelope"></i>Sugerencias</a></li>
-                        <li><a href="{{ url_for('VerSugerencias') }}"><i class="fa-solid fa-envelope"></i>Ver sugerencias</a></li>
+                        <li class="menu-selected">
+                          <a href="{{ url_for('VerSugerencias') }}"><i class="fa-solid fa-envelope"></i>Ver sugerencias</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
