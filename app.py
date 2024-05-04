@@ -30,7 +30,7 @@ def Sugerencias():
 
     return render_template("Sugerencias.html")
 
-@app.route("/EnsenarSugerencias")
+@app.route("/VerSugerencias")
 def EnsenarSugerencias():
     con = sqlite3.connect("db.sqlite")
     c = con.cursor()
@@ -38,7 +38,7 @@ def EnsenarSugerencias():
     sugerencias = c.fetchall()
 
     con.close()
-    return render_template("EnsenarSugerencias.html", sugerencias=sugerencias)
+    return render_template("VerSugerencias.html", sugerencias=sugerencias)
 
 @app.route("/Facultades")
 def Facultades():
