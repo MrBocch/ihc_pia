@@ -31,7 +31,7 @@ def Sugerencias():
     return render_template("Sugerencias.html")
 
 @app.route("/VerSugerencias")
-def EnsenarSugerencias():
+def VerSugerencias():
     con = sqlite3.connect("db.sqlite")
     c = con.cursor()
     c.execute("SELECT * FROM Sugerencias ORDER BY id DESC")
