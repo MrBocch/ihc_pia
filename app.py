@@ -30,6 +30,16 @@ def Sugerencias():
 
     return render_template("Sugerencias.html")
 
+@app.route("/EnsenarSugerencias")
+def EnsenarSugerencias():
+    con = sqlite3.connect("db.sqlite")
+    c = con.cursor()
+    c.execute("SELECT * FROM Sugerencias ORDER BY id DESC")
+    sugerencias = c.fetchall()
+
+    con.close()
+    return render_template("EnsenarSugerencias.html", sugerencias=sugerencias)
+
 @app.route("/Facultades")
 def Facultades():
     return render_template("Facultades.html")
