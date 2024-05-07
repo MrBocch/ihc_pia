@@ -9,7 +9,7 @@ def index():
 
 @app.route("/QuienSomos")
 def QuienSomos():
-    return render_template("QuienesSomos.html")
+    return render_template("QuienesSomos-copy.html")
 
 @app.route("/Sugerencias", methods=['POST','GET'])
 def Sugerencias():
